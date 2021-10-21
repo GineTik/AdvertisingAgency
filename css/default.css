@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root {
+    --bs-primary-linear: linear-gradient(0deg, #0089ED, #2191E2);
+    --bs-primary: #0089ED;
+    --bs-primary-rgb: 0, 137, 237;
+}
+* {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat;
+    font-weight: 600;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    margin-bottom: 52px;
+}
+a {
+    text-decoration: none !important;
+}
+section {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.contacts > a:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-main {
+    background: var(--bs-primary-linear);
+}
+.header-main > .container, .header-main > .logo  {
+    /* height: 67px; */
+}
+
+.header-main > .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-link {
+    position: relative;
+}
+/* .navbar-link.selected::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+
+} */
+
+
+
+/* NAVBAR */
+header .navbar-brand {
+    height: 67px;
+}
+.navbar-list {
+    /* display: flex;
+    justify-content: start;
+    align-items: center; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.navbar-link {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.navbar-btn .btn {
+    font-size: 14px;
+}
+
+
+.present {
+    position: relative;
+}
+.present-content > * {
+    margin-bottom: 25px;
+}
+.present .container {
+    min-height: 500px;
+}
+.present-image {
+    height: 500px;
+
+    opacity: 1;
+}
+.typePage {
+    font-size: 20px;
+}
+.present-coment {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+@media (max-width: 1300px) {
+    .present-image {
+        opacity: .1;
+    }
+}
+.present-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    z-index: -2;
+}
+.present-title {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 135.2%;
+}
+
+.section-comment {
+    /* width: 50%; */
+    max-width: 600px;
+    font-size: 18px;
+}
+@media (max-width: 500px) {
+    .section-comment {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+section > .container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+@media (max-width: 768px) {
+    section > .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+}
+
+.we-us-image {
+    margin-top: 80px;
+    position: relative;
+    width: 70%;
+}
+.we-us-image img:first-child {
+    width: 100%;
+}
+.we-us-image img:last-child {
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    z-index: -1;
+    width: 40%;
+    height: 40%;
+}
+@media (max-width: 500px) {
+    .we-us-image {
+        width: 80%;
+    }
+}
+
+
+
+.ourprocesswork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ourprocesswork__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 220px;
+}
+.ourprocesswork__item:not(:last-child) {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.ourprocesswork__item > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+.ourprocesswork__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgba(220, 112, 0, .09);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourprocesswork__img > img {
+    width: 32px;
+    height: 32px;
+}
+.ourprocesswork__text {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.buttons-slider > * {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.our__service > * {
+    box-shadow: 0 0 0 var(--bs-gray-400);
+    transition: .3s box-shadow;
+}
+.our__service > *:hover {
+    /* box-shadow: 0 0 15px var(--bs-gray-400); */
+}
+
+.our__service > *:hover .our__service__item__link {
+    text-decoration: underline;
+}
