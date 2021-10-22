@@ -18,14 +18,24 @@
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog px-sm-4 px-1" style="max-width: 1000px; min-width: auto" role="document">
             <div class="modal-content rounded-20px px-2">
-                <div class="modal-header border-bottom-0">
+                <div class="modal-header border-bottom-0 pb-3">
                     <h3 class="modal-title" id="exampleModalLabel">Зв’язатись з нами</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="contacts d-flex justify-content-center mb-4">
-                        <div class="contacts__block">
-                            <h5>Слідкуйте за нами</h5>
+                    <style>
+                        .border-md-end {
+                            border-right: 1px solid #dee2e6!important;
+                        }
+                        @media (max-width: 768px) {
+                            .border-md-end {
+                                border-right: 0;
+                            }
+                        }
+                    </style>
+                    <div class="row flex-md-row flex-column mb-5">
+                        <div class="border-md-end pb-md-0 pb-4 col d-flex flex-column align-items-center">
+                            <p class="mb-2">Слідкуйте за нами</p>
                             <div class="mb-1 col d-flex justify-content-start align-items-center">
                                 <div class="shadow cursor-pointer me-2 btn-light rounded-pill d-flex justify-content-center align-items-center" style="width: 34px; height: 34px">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -39,7 +49,16 @@
                                 </div>
                             </div>
                         </div>
-                        <hr>
+
+                        <div class="border-md-end pb-md-0 pb-4 col d-flex justify-content-center align-items-center">
+                            <object class="me-2" data="image/icons/phone_icon.svg" width="20" height="20"></object>
+                            <span>+380 000 00 00</span>
+                        </div>
+
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <object class="me-2" data="image/icons/email_icon.svg" width="20" height="20"></object>
+                            <span>shevchuk.ria@gmail.com</span>
+                        </div>
                     </div>
 
                     <div class="bg-black-dark p-4 d-flex flex-xl-row flex-column align-items-center justify-content-between" style="border-radius: 18px;">
