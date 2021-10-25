@@ -73,3 +73,14 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+
+.carousel-control-prev, .carousel-control-next {
+    width: 35%;
+}
+.carousel-control-prev {
+    margin-left: 5%;
+}
+.carousel-control-next {
+    margin-right: 5%;
+}
