@@ -344,6 +344,7 @@ section > .container {
 }
 .services .our__service a {
     margin: 10px;
+    height: 270px;
 }
 
 @media (max-width: 993px) {
