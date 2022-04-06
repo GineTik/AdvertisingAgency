@@ -336,3 +336,19 @@ section > .container {
     margin: 10px;
 }
 /* PORTFOLIO */
+
+
+/* SERVICES */
+.services .our__service {
+    justify-content: center;
+}
+.services .our__service a {
+    margin: 10px;
+}
+
+@media (max-width: 993px) {
+    .services .our__service a {
+        margin: 0 !important;
+        margin-top: 15px !important;
+    }
+}
