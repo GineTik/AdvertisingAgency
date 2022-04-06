@@ -311,3 +311,28 @@ section > .container {
     }
 }
 /* GALLERY */
+
+
+
+/* PORTFOLIO */
+.portfolio__list {
+    flex-wrap: wrap;
+    margin: -10px;
+    justify-content: center;
+}
+.image {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 900;
+    user-select: none;
+}
+.portfolio__item {
+    width: 250px;
+    box-sizing: border-box;
+    height: 350px;
+    margin: 10px;
+}
+/* PORTFOLIO */
